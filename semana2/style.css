@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  border: solid red;
+  height: 100vh;
+}
+
+article {
+  border: solid blue 5px;
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  color: red;
+background-image: url(../semana1/dia2/imagenes/Iron_Man_1_Portada.webp);
+background-size: cover;
+
+  padding: 20px;
+  margin: auto;
+}
+
+img {
+  width: 200px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.imagen2{
+    width: 100px;
+    height: 100px;
+    border: solid red;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: #000;
+}
+
+.parrafo2{
+    color: blue;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* ejercicios */
+/*  realizar 4 secciones - widht 1200px height 500px -300px-100px*/
