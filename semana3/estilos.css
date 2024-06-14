@@ -1,0 +1,67 @@
+body{
+    border: solid;
+    margin: auto;
+    height: 100vh;
+}
+
+header{
+    border: solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+ ul{
+    display: flex;
+ }
+ li{   
+    margin-right: 5px;
+    list-style: none;
+ }
+
+h1 {
+    color: red;
+}
+
+.parrafo{
+    color: blue;
+}
+
+#subtitulo{
+    color: green;
+}
+
+/* tag */
+
+section{
+    border: solid red;
+    border-radius: 20px;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+}
+
+
+section .redes img {
+    width: 50px;
+    border: solid;
+    border-radius: 50%;
+
+}
+
+
+.contenedor{
+    border: solid red;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+
+.cuadrado{
+    margin-right: 4px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}

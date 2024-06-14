@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablas</title>
+</head>
+<body>
+    <!-- tablas html -->
+     <!-- table -->
+      <!-- tr -->
+       <!-- th -->
+        <!-- td -->
+
+        <!-- ejemplo -->
+<style>
+    table{
+        width: 50%;
+        border-collapse:collapse ;
+    }
+    td,th{
+        border: 1px solid;
+        padding: 10px;
+        text-align: center;
+    }
+
+    th{
+        background-color: #ccc;
+    }
+</style>
+
+   <h2>tablas</h2>
+        <table>
+          <tr>
+            <th>NOMBRE</th>
+            <th>EDAD</th>
+            <th>CIUDAD</th>
+          </tr>
+          <tr>
+            <td rowspan="3">GUILLERMO</td>
+            <td>32</td>
+            <td>HUANUCO</td>
+          </tr>
+          <tr>
+          
+            <td>32</td>
+            <td>HUANUCO</td>
+          </tr>
+          <tr>
+            
+            <td>32</td>
+            <td>HUANUCO</td>
+          </tr>
+        </table>
+
+
+    <!-- tablas de datos  -->
+    <table>
+        <caption>DATOS DE PERSONAL</caption>
+        <thead>
+          <tr>
+            <th>
+                NOMBRE
+            </th>
+            <th>
+                EDAD
+            </th>
+            <th>
+                CIUDAD
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>JUAN</td>
+                <td>40</td>
+                <td>LIMA</td>
+            </tr>
+            <tr>
+                <td>roberto</td>
+                <td>40</td>
+                <td>LIMA</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" >
+                    total de registros : 2
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
