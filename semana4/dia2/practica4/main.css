@@ -16,9 +16,9 @@ body {
 
 .container {
   margin: auto;
-  width: 1100px;
+  width: 1440px;
   height: 100vh;
-  border: solid;
+
 }
 
 header {
@@ -35,7 +35,7 @@ ul {
 
 ul li {
   list-style: none;
-  margin-right: 25px;
+  margin-right: 40px;
 }
 
 /* seccion uno */
@@ -45,12 +45,12 @@ ul li {
 }
 
 .img-principal {
-  width: 750px;
+  width: 1000px;
 }
 
 .bloqueuno {
-  border: solid;
-  width: 750px;
+ 
+  width: 1000px;
 }
 
 .bloqueuno div {
@@ -60,29 +60,35 @@ ul li {
 
 .text-seccion {
   font-weight: 800;
-  font-size: 55px;
-  border: solid;
+  font-size: 75px;
+
 }
 
 article {
   display: flex;
+  align-items: center;
 }
 
 article p{
-    letter-spacing: 5px;
-    line-height: 25px;
+    letter-spacing: 8px;
+    line-height: 35px;
+    font-size: 25px;
 }
 
 button{
+    font-size: 20px;
     border: none;
+    font-weight: bold;
+    width: 250px;
     line-height: 5px;
     letter-spacing: 5px;
     margin-top: 50px;
-    padding: 15px;
+    padding: 25px;
     background-color: hsl(5, 85%, 63%);
 }
 
-.bloquedos{
-    border: solid;
-    width: 600px;
+.bloquedos{   
+    width: 400px;
+    background-color: hsl(240, 100%, 5%);
+    margin-left: 20px;
 }
