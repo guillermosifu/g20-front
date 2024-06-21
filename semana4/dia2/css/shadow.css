@@ -1,0 +1,15 @@
+.box-basic{
+    width: 150px;
+    height: 150px;
+    border: solid red;
+    box-shadow: 5px 15px 10px red;
+}
+
+.box-blur{
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    border: solid blue;
+    box-shadow: 5px 25px 10px rgb(10, 19, 146, 0.5) ;
+
+}

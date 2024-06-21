@@ -1,0 +1,8 @@
+.border{
+    width: 300px;
+    height: 300px;
+    border: solid;
+    border-top-left-radius: 170px;
+    border-bottom-right-radius: 170px;
+   background-color: green;
+}
