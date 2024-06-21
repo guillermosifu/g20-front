@@ -5,7 +5,6 @@
 }
 
 body {
-  border: solid;
   height: 100vh;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -17,12 +16,10 @@ body {
 .container {
   margin: auto;
   width: 1440px;
-  height: 100vh;
-
 }
 
 header {
-  margin-top: 100px;
+  margin-top: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,8 +37,11 @@ ul li {
 
 /* seccion uno */
 
-.section-one{
-    display: flex;
+.section-one {
+  display: flex;
+  margin-bottom: 80px;
+
+  height: 700px;
 }
 
 .img-principal {
@@ -49,19 +49,19 @@ ul li {
 }
 
 .bloqueuno {
- 
   width: 1000px;
+  height: 70vh;
 }
 
 .bloqueuno div {
   width: 50%;
-  padding: 30px;
+  padding: 20px;
+  margin-bottom: 40px;
 }
 
 .text-seccion {
   font-weight: 800;
   font-size: 75px;
-
 }
 
 article {
@@ -69,26 +69,75 @@ article {
   align-items: center;
 }
 
-article p{
-    letter-spacing: 8px;
-    line-height: 35px;
-    font-size: 25px;
+article p {
+  letter-spacing: 8px;
+  line-height: 35px;
+  font-size: 25px;
 }
 
-button{
-    font-size: 20px;
-    border: none;
-    font-weight: bold;
-    width: 250px;
-    line-height: 5px;
-    letter-spacing: 5px;
-    margin-top: 50px;
-    padding: 25px;
-    background-color: hsl(5, 85%, 63%);
+button {
+  font-size: 20px;
+  border: none;
+  font-weight: bold;
+  width: 250px;
+  line-height: 5px;
+  letter-spacing: 5px;
+  margin-top: 50px;
+  padding: 25px;
+  background-color: hsl(5, 85%, 63%);
 }
 
-.bloquedos{   
-    width: 400px;
-    background-color: hsl(240, 100%, 5%);
-    margin-left: 20px;
+.bloquedos {
+  width: 400px;
+  height: 700px;
+  background-color: hsl(240, 100%, 5%);
+  margin-left: 20px;
+  padding: 15px;
+}
+
+.bloquedos h2{
+    color: hsl(35, 77%, 62%);
+    font-size: 40px;
+}
+
+.bloquedos div{
+    border-bottom: 1px solid gray;
+    padding: 40px 0px;
+}
+
+.bloquedos h3,p{    
+    margin-top: 10px;
+    color:#fff ;
+}
+
+/* section dos */
+
+.section-dos {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  width: 450px;
+}
+
+.card div {
+  padding: 0 12px;
+}
+
+.card img {
+  width: 150px;
+}
+
+.card div h2 {
+  color: hsl(5, 85%, 63%);
+  margin-bottom: 25px;
+  font-size: 40px;
+}
+
+.card div h3 {
+  margin-bottom: 50px;
+
 }
