@@ -9,19 +9,26 @@
 
 // number 
 let numero1 = prompt("ingresa valor");
-let numero2=prompt("ingresa el valor 2")
+let numero2 = prompt("ingresa el valor 2")
 
 
+//let suma = parseInt(numero1) + parseInt(numero2);
+let suma = +numero1 + +numero2;
 
-
-
-const pi = 3.1466685666 
 console.log(numero1)
+console.log(numero2)
+console.log(suma)
+
+
+
+
+const pi = 3.1466685666
+//console.log(numero1)
 // string 
 let alumno = "guillermo";
 
 // booleano 
-let bool= true 
+let bool = true
 let bool2 = 0
 
 // null - 
@@ -36,10 +43,10 @@ let noDefinido;
 // console.warn("alerta")
 // console.error("error")
 
-//alert ventana emergente  
+//alert ventana emergente
 
 // alert(132)
 
-//prompt  ventana pero que guarda datos 
+//prompt  ventana pero que guarda datos
 
 //prompt("ingresa tu nombre")
