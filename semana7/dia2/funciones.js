@@ -77,3 +77,79 @@ function verAprobadosDesaprobados(notasAlumnos) {
 
 const todasLasNotas = [20, 20, 13, 15, 11, 10, 9, 5, 5]
 console.log(verAprobadosDesaprobados(todasLasNotas))
+
+// ---------------------------------------------
+/*
+Una compañía, fabrica focos de colores (verdes, blancos y rojos). 
+Se desea contabilizar, de un lote de N focos(matrices), 
+el número de focos de cada color que hay en existencia. 
+*/
+
+// contar cada uno de los focos
+// contar cada foco por color
+
+/**
+ * 
+ * @param { Array } focos 
+ */
+function contarFocos(focos) {
+    // este es mi objeto para almacenar los foquitos
+    const cantidad = {
+        rojo: 0,
+        blanco: 0,
+        verde: 0
+    }
+
+    // contando cada uno de los focos
+    focos.map((foco) => {
+        switch (foco) {
+            case 'verde':
+                cantidad.verde++
+                break;
+
+            case 'blanco':
+                cantidad.blanco++
+                break;
+
+            case 'rojo':
+                cantidad.rojo++
+                break;
+
+            default:
+                break;
+        }
+    })
+
+    return cantidad
+}
+
+// la lista de mis focos
+const focos = [
+    "verde", "rojo", "rojo", "blanco", "verde", "verde", "asdasdassa", "rojo",
+    "blanco", "verde", "blanco", "rojo", "rojo", "rojo"
+]
+
+// llamo a la función con los focos a contar
+console.log(contarFocos(focos))
+
+// vamos a cambiar de dolares a soles
+// usando prompt para recibir los dolares
+// y un alert para mostrar cuanto saldo en soles tenemos
+
+function convertirDolares() {
+    // almacenando los dolares desde el input del prompt
+    const VALOR_DOLAR = 3.76
+    let dolares = prompt("Coloca tus dólares")
+    // 1 dolar = 3.76 soles
+
+    // obtenemos el resultado y usando toFixed
+    // le decimos cuantos decimales tendrá
+    // alert(`Tienes S/.${(dolares * VALOR_DOLAR).toFixed(2)} soles`)
+
+    // string, number, array, boolean, object.. node
+    // Document Object Model
+    const calculo = `Tienes S/.${(dolares * VALOR_DOLAR).toFixed(2)} soles`
+
+    const div = document.getElementById('cantidadSoles')
+    div.innerText = calculo
+}

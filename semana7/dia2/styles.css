@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(216, 216, 216);
+}
+
+#conversor {
+    background: linear-gradient(0deg, rgba(3, 0, 46, 1) 0%, rgba(203, 34, 0, 1) 100%);
+    height: 100vh;
+    align-content: center;
+    text-align: center;
+}
+
+#conversor button {
+    font-family: Candara;
+    font-size: 20px;
+    padding: .6em 1em;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(216, 216, 216);
+
+    transition: background-color .1s, box-shadow .1s;
+}
+
+#conversor button:hover {
+    background-color: rgba(225, 225, 225, 0.248);
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.518);
+}
+
+#cantidadSoles {
+    color: yellow
+}
