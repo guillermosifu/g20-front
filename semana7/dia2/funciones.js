@@ -35,7 +35,7 @@ function calcularPromedioNotas(arregloNotas) {
 }
 
 const notas = [20, 20, 13, 12]
-console.log(calcularPromedioNotas(notas))
+console.log("El promedio de notas es: ", calcularPromedioNotas(notas))
 
 // calcular el area de un rectangulo 
 // calcular el area de un circunferencia
