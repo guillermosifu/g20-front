@@ -153,3 +153,35 @@ function convertirDolares() {
     const div = document.getElementById('cantidadSoles')
     div.innerText = calculo
 }
+
+
+// Se tiene el nombre y la edad de tres personas. 
+// Se desean saber el nombre y la edad de la persona de menor edad. 
+
+/**
+ * 
+ * @param { Array } personas 
+ */
+function obtenerPersona(personas) {
+    let personaConMenorEdad = null
+    let menorEdad = Infinity
+
+    personas.forEach(p => {
+        if (p.edad < menorEdad) {
+            menorEdad = p.edad
+            personaConMenorEdad = p
+        }
+    })
+
+    return personaConMenorEdad
+}
+
+const personas = [
+    { nombre: "Alex", edad: 15 },
+    { nombre: "Ana", edad: 18 },
+    { nombre: 'Jacinto', edad: 10 },
+    { nombre: "Pepito", edad: 16 },
+    { nombre: "Alan", edad: 13 }
+]
+
+console.log(obtenerPersona(personas))
