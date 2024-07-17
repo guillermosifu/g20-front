@@ -1,5 +1,6 @@
 function imprimir(){
-    alert('hola')
+    
+Swal.fire("SweetAlert2 is working!");
 }
 
 //5 difretes selectores 
@@ -52,3 +53,16 @@ const convertirFilter =  convertir.filter(
 );
 
 console.log('iterado',convertirFilter)
+
+//darkmode
+
+function cambiarColor(){
+    const color = document.getElementById('darkmode')
+    color.style.backgroundColor= "red"
+}
+
+// cambiar el texto de un elemento 
+function cambiarTexto(){
+    const texto = document.querySelector('#change');
+    texto.textContent = "bienvenidos"
+}
