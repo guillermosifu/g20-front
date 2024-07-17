@@ -66,3 +66,12 @@ function cambiarTexto(){
     const texto = document.querySelector('#change');
     texto.textContent = "bienvenidos"
 }
+
+// cambio varios'
+function cambioVarios(){
+    const div = document.getElementById('modificado')
+    div.style.backgroundColor='blue'
+    div.style.color="#fff"
+    div.textContent="nuevo texto"
+    div.style.fontSize="40px"
+}
