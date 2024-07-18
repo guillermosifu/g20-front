@@ -11,4 +11,23 @@
     --clr-font:#fff;
     --clr-primary:#d23699;
     --clr-grey:#64748b;
+    
+}
+
+.red-theme{
+    --clr-bgc:blue;
+    --clr-font:#fff;
+    --clr-primary:#7b2caf;
+    --clr-grey:#262a30;
+}
+
+.btn{
+    background: var(--clr-primary);
+    color: var(--clr-bcg);
+
+}
+
+body{
+    background: var(--clr-bcg);
+    color: var(--clr-font);
 }
