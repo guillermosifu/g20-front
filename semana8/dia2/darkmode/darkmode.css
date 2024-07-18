@@ -1,0 +1,14 @@
+:root{
+    --clr-bcg:#fff;
+    --clr-font:#282c35;
+    --clr-primary:#d23699;
+    --clr-grey:#64748b;
+
+}
+
+.dark-mode{
+    --clr-bcg:#282c35;
+    --clr-font:#fff;
+    --clr-primary:#d23699;
+    --clr-grey:#64748b;
+}
