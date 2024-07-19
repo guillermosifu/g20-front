@@ -15,7 +15,7 @@
 }
 
 .red-theme{
-    --clr-bgc:blue;
+    --clr-bgc:#ccc;
     --clr-font:#fff;
     --clr-primary:#7b2caf;
     --clr-grey:#262a30;
@@ -24,7 +24,6 @@
 .btn{
     background: var(--clr-primary);
     color: var(--clr-bcg);
-
 }
 
 body{
