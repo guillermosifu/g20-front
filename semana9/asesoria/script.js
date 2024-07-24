@@ -15,3 +15,31 @@ const cargarComponente = async (archivoHtml, parentId) => {
 }
 
 cargarComponente('./banner.html', 'banner')
+
+
+// consultando internet
+async function cargarPublicaciones() {
+    const publicaciones = await fetch('https://pokeapi.co/api/v2/pokemon')
+    const json = await publicaciones.json()
+
+    json.results.forEach(pokemon => {
+        console.log(pokemon.name)
+        document.getElementById('pokemons').innerHTML += crearPokemon(pokemon.name, pokemon.url)
+    })
+
+}
+
+function crearPokemon(nombre, link) {
+
+    return `Pokemon: ${nombre} <br/> <a href='${link}'> Visita su enlace </a> <br/> <br/>`
+}
+
+// async function cargarPublicaciones() {
+//     await fetch('https://jsonplaceholder.typicode.com/posts').then(response => {
+//         response.json()
+//     })
+// }
+
+// useEffect()
+
+cargarPublicaciones()
