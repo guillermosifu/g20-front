@@ -34,12 +34,5 @@ function crearPokemon(nombre, link) {
     return `Pokemon: ${nombre} <br/> <a href='${link}'> Visita su enlace </a> <br/> <br/>`
 }
 
-// async function cargarPublicaciones() {
-//     await fetch('https://jsonplaceholder.typicode.com/posts').then(response => {
-//         response.json()
-//     })
-// }
-
-// useEffect()
-
 cargarPublicaciones()
+
