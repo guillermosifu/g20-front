@@ -22,13 +22,28 @@ const githubName = document.querySelector("#github-name")
 const githubUserName = document.querySelector("#github-username")
 const githubBio = document.querySelector("#github-bio")
 
-//funcion que se enacragra de traes los datos de la API
+githubActionSearch.onclick =()=>{
+ const username = githubSearch.value
+ console.log(username)
 
-const obtenerDatosGithub =async(username="goku")=>{
-    const response =await  fetch(`https://api.github.com/users/${username}`)
-    const data = await response.json()
-    console.log(data)
+ obtenerDatosGithub(username)
 
 }
 
-obtenerDatosGithub()
+
+
+
+
+
+//funcion que se enacragra de traes los datos de la API
+
+const obtenerDatosGithub =async(username="")=>{
+    const response =await  fetch(`https://api.github.com/users/${username}`)
+    const data = await response.json()
+    console.log(data)
+}
+
+
+
+// evento
+
