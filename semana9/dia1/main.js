@@ -22,6 +22,9 @@ const githubName = document.querySelector("#github-name")
 const githubUserName = document.querySelector("#github-username")
 const githubBio = document.querySelector("#github-bio")
 
+
+//  el disparado o evento de boton - captura el valior del input y lo guarda
+//en la variable username
 githubActionSearch.onclick =()=>{
  const username = githubSearch.value
  console.log(username)
@@ -30,20 +33,22 @@ githubActionSearch.onclick =()=>{
 
 }
 
-
-
-
-
-
 //funcion que se enacragra de traes los datos de la API
 
 const obtenerDatosGithub =async(username="")=>{
     const response =await  fetch(`https://api.github.com/users/${username}`)
     const data = await response.json()
     console.log(data)
+
+    setDataUser(data)
 }
 
 
 
-// evento
-
+// evento inserta datos al html
+const setDataUser =(data)=>{
+    imgProfile.src= data.avatar_url;
+    githubName.textContent= data.login;
+    githubUserName.textContent= data.name
+    githubBio.textContent = data.bio;
+}
