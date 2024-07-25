@@ -27,6 +27,15 @@ const githubBio = document.querySelector("#github-bio")
 //en la variable username
 githubActionSearch.onclick =()=>{
  const username = githubSearch.value
+ githubActionSearch.value="";
+ if(username===""){
+  Swal.fire({
+    title:"Error",
+    text:"debe llenar busqueda",
+    icon:"error"
+  });
+  return
+ }
  console.log(username)
 
  obtenerDatosGithub(username)
