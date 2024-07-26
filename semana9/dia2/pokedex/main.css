@@ -1,0 +1,24 @@
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: url(./imagenes/background_poke.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+    
+ }
+ 
+ .text-title {
+   -webkit-text-stroke: 0.5px black;
+   text-transform: capitalize;
+   font-weight: bold;
+   font-size: 1.2em;
+ }
+
+ .title-principal{
+     text-align: center;
+     margin-top: 1%;
+ }
+
+ .link {
+   cursor: pointer;
+ }
