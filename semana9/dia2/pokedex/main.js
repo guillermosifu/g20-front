@@ -7,10 +7,11 @@
 //logicA DE JS
 
 const pokemonsContainer = document.querySelector("#row-pokemons")
+const pokemonName= document.querySelector("#pokemon-name")
 
 //funcion que consuime los datos del api
 const obtenerPokemones =async()=>{
-  const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=20")
+  const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=100")
   const data=await response.json()
   
  console.log(data.results)
@@ -34,6 +35,7 @@ results.map(async(result,index)=>{
    <h6 class="text-title">N. ${index + 1}</h6>
    <h4 class="text-title">${result.name}</h4>
    </div>
+   <button class="btn btn-danger" onclick="obtenerDetallePokemon("${result.url})" data-bs-toggle="modal" data-bs-target="#modalPokemon">Ver detalle</button>
    </div>
    </div>`;
     pokemonsContainer.innerHTML += html;
@@ -41,5 +43,16 @@ results.map(async(result,index)=>{
 
 }
 
+const obtenerDetallePokemon=async(url)=>{
+  const response =await fetch(url);
+  const data= await response.json()
+  console.log(data) 
+  pokemonName.innerHTML=data.name
+
+}
+
 
 obtenerPokemones()
+
+// ejercicio  crear el modal  y insertar dato al modal de cada pokemon
+//nombre -imagen diferente -habilidad
