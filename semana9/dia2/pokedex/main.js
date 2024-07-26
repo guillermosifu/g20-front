@@ -9,6 +9,7 @@
 const pokemonsContainer = document.querySelector("#row-pokemons")
 const pokemonName= document.querySelector("#pokemon-name")
 const pokemonImg = document.querySelector("#pokemon-img")
+const pokemonAbilities = document.querySelector("#pokemon-abilities")
 //funcion que consuime los datos del api
 const obtenerPokemones =async()=>{
   const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=100")
@@ -47,8 +48,9 @@ const obtenerDetallePokemon=async(url)=>{
   const response =await fetch(url);
   const data= await response.json()
   console.log(data) 
-  pokemonName.innerHTML=data.name
-  pokemonImg.src= data.sprites.other.dream_world.front_default
+  pokemonName.innerHTML=data.name;
+  pokemonImg.src= data.sprites.other.dream_world.front_default;
+  pokemonAbilities.innerHTML = data.abilities[0].ability.name;
 
 }
 
